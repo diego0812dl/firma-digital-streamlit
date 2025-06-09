@@ -17,10 +17,13 @@ import boto3
 from botocore.exceptions import NoCredentialsError, ClientError
 
 # -------- CONFIGURACIÓN AWS --------
-load_dotenv()
 AWS_BUCKET_NAME = "directorio-efirmas"
-AWS_REGION = "us-east-2"
-s3_client = boto3.client('s3', region_name=AWS_REGION)
+s3_client = boto3.client(
+    's3',
+    aws_access_key_id=st.secrets["AWS_ACCESS_KEY_ID"],
+    aws_secret_access_key=st.secrets["AWS_SECRET_ACCESS_KEY"],
+    region_name=st.secrets["AWS_DEFAULT_REGION"]
+)
 
 # -------- UTILIDADES --------
 def hash_bytes(data):
