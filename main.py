@@ -1,6 +1,6 @@
 # ---------------------------------------------
 # 🖋 APLICACIÓN DE FIRMA DIGITAL CON STREAMLIT
-# Autores: [Tu nombre o equipo]
+# Autores: criptomokey
 # Descripción: Firma y verifica archivos usando RSA y ECC, almacenando llaves en AWS S3.
 # ---------------------------------------------
 
