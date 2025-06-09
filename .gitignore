@@ -1,0 +1,25 @@
+# Archivos y carpetas de Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Archivos del entorno virtual (si estás usando uno)
+.env
+venv/
+.venv/
+
+# Archivos de configuración del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de claves o configuración sensible
+*.pem
+*.key
+*.crt
+.env
+
+# Archivos de Streamlit
+.streamlit/secrets.toml
